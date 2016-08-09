@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Beatriz</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html>
+	<head>
+    <h1> BE HAPPY TODAY</h1>
+    <h2>hgf hhh</h2>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script>
+		<style>
+		canvas[resize] {
+			background-color: white;
+			height: 100%;
+      width: 100%;
+		}
+
+		</style>
+		<script type="text/paperscript" canvas="myCanvas">
+		function onMouseMove(e) {
+			var s = new Shape.Circle(e.point, 10);
+			s.fillColor = 'powderBlue';
+      s.onFrame = shrinkCircle;
+		}
+    
+    function shrinkCircle(){
+   this.radius -= .5;
+  
+  if (this.radius < 1){
+    this.remove();
+  }
+}
+		</script>
+	</head>
+	<body>
+    
+		<canvas id="myCanvas" resize></canvas>
+	</body>
+</html>
+    
+    
+    
+    
+    
+  </body>
+</html>
