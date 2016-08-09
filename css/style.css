@@ -1,0 +1,74 @@
+myCanvas {
+  border: 0px;
+  position:absolute;
+}
+
+h1 {
+  position: absolute;
+  z-index: 1000;
+  text-align: centered;
+  
+  font-family: "Helvetica Neue",sans-serif;
+  margin-left: 130px;
+  margin-top: 240px;
+  font-size: 5.6em;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-radial-gradient( 110% 50%, circle, #79D3BD 0%,#894789 110%,#79D3BD);
+    background-image: radial-gradient( circle at 110% 50%, #79D3BD 0%,#894789 110%,#79D3BD);
+  text-decoration: underline;
+  animation-name: pan-gradient;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes pan-gradient {
+  
+  0%   { 
+      
+      background-position: 0 0;
+  }
+  
+  25% {
+     
+      background-position: -500px -500px;
+  }
+  
+  
+  
+  50% { 
+      
+       background-position: -500px 500px;
+   
+  }
+  
+  
+  100% { 
+      
+       background-position: 0 0;
+   
+  }
+
+}
+
+h2 {
+  color: lavender;
+  position: absolute;
+  z-index: 1000;
+  text-align: centered;
+  font-family: "Helvetica Neue",sans-serif;
+  margin-left: 435px;
+  margin-top: 380px;
+  font-size: 2.6em;
+  animation:
+            bounce 2s infinite alternate;
+}
+
+@keyframes bounce{
+      0%   {top: 0px;}
+    25%  {top: 20px;}
+  50%  {top: 10px;}
+    75%  {top: 20px;}
+    100% {top: 0px;}
+}
+
