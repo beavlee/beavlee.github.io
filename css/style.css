@@ -51,15 +51,15 @@ h1 {
 
 }
 
-h2 {
+h6 {
   color: lavender;
   position: absolute;
   z-index: 1000;
   text-align: centered;
   font-family: "Helvetica Neue",sans-serif;
-  margin-left: 435px;
+  margin-left: 320px;
   margin-top: 380px;
-  font-size: 2.6em;
+  font-size: 1.6em;
   animation:
             bounce 2s infinite alternate;
 }
@@ -72,3 +72,32 @@ h2 {
     100% {top: 0px;}
 }
 
+#Layer_1{
+  width:100px;
+  height:100px; 
+  z-index: 1000;
+  margin-left: 440px;
+  margin-top: 420px;
+}
+
+path{
+ fill: none;
+  stroke: #2a3745;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.bea{
+  stroke-dasharray: 756;
+  stroke-dashoffset: 756;
+  animation: draw 3s ease-in-out 1s forwards;
+}
+.lee{
+  stroke-dasharray: 756;
+  stroke-dashoffset: 756;
+  animation: draw 3s ease-in-out 3.5s forwards;
+}
+@keyframes draw{
+  100%{stroke-dashoffset: 0;}
+}
